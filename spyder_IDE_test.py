@@ -17,7 +17,6 @@ import matplotlib.pyplot as plt
 
 image = imread('island.png')
 
-plt.imshow(image)
 
 X = image.reshape(-1, 4)
 kmeans = KMeans(n_clusters=3).fit(X)
